@@ -89,8 +89,23 @@ contact_close.addEventListener('click',()=>{
 
 var change_setting = document.querySelector('.change_setting');
 var change = document.querySelector('.change');
+var bi = document.querySelector('.change .bi');
+
+
 change.addEventListener('click',()=>{
-    change_setting.classList.toggle('set')
+    if(bi.classList.contains("bi-gear-fill")){
+        bi.classList.remove("bi-gear-fill");
+        bi.classList.add('bi-x-square');
+        change_setting.classList.add('set');
+
+        menu_bi.classList.remove('bi-x-square');
+        menu_bi.classList.add('bi-list');
+        mobile_menu_back.classList.remove('showed');
+    }else{
+        bi.classList.remove("bi-x-square");
+        bi.classList.add("bi-gear-fill");
+        change_setting.classList.remove('set');
+    }
 })
 
 var backblack_colorback = document.querySelectorAll('.page ,.project_about_page ,.project_about_page ,.project_indicators button,.home_content_btns button a ,.project_about_page_close');
@@ -279,9 +294,22 @@ red_close_btn.addEventListener('click',()=>{
 var mobile_menu_back = document.querySelector('.mobile_menu_back');
 
 var burger_menu = document.querySelector('.burger_menu');
-
+var menu_bi = document.querySelector('.burger_menu .bi');
+// -----------------
 burger_menu.addEventListener('click',()=>{
-    mobile_menu_back.classList.toggle('showed');
+    if(menu_bi.classList.contains('bi-list')){
+        menu_bi.classList.remove('bi-list');
+        menu_bi.classList.add('bi-x-square');
+        mobile_menu_back.classList.add('showed');
+
+        bi.classList.remove("bi-x-square");
+        bi.classList.add("bi-gear-fill");
+        change_setting.classList.remove('set');
+    }else{
+        menu_bi.classList.remove('bi-x-square');
+        menu_bi.classList.add('bi-list');
+        mobile_menu_back.classList.remove('showed');
+    }
 })
 var mobile_menu_about = document.querySelector('.mobile_menu_about');
 var mobile_menu_skill = document.querySelector('.mobile_menu_skill');

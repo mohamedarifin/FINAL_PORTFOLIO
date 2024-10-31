@@ -5,7 +5,7 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 body{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     position: relative;
 }
@@ -13,7 +13,7 @@ body::-webkit-scrollbar{
     display: none;
 }
 .page{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
 }
 .nav_fade{
@@ -56,7 +56,7 @@ body::-webkit-scrollbar{
     border-radius: 5px;
 }
 .home_content,.about_content{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     padding: 10px;
 }
@@ -138,8 +138,6 @@ body::-webkit-scrollbar{
     border-radius: 5px;
     font-weight: 900;
     cursor: pointer;
-}
-.about p{
 }
 .skillS_first_content{
     display: flex;
@@ -357,8 +355,6 @@ body::-webkit-scrollbar{
     border: none;
     outline: none;
 }
-.contact_submit_btn{
-}
 .home{
     position: absolute;
     left: 0;top: 0;
@@ -373,6 +369,11 @@ body::-webkit-scrollbar{
     top: 70px;
     left: -45%;
     text-align: center;
+    border: 3px solid black;
+    border-radius: 12px;
+}
+.change .bi{
+    font-size: 25px;
 }
 .set{
     position: absolute;
@@ -435,7 +436,7 @@ body::-webkit-scrollbar{
     border: 5px solid black;
 }
 .write_animate{
-    width: 13ch;
+    width: 18ch;
     animation: typing 6s steps(26) forwards infinite alternate;
     white-space: nowrap;
     overflow: hidden;
@@ -446,7 +447,7 @@ body::-webkit-scrollbar{
         width: 0%;
     }
     50%{
-        width: 13ch;
+        width: 18ch;
     }
 }
 .mobile_menu{
@@ -540,6 +541,10 @@ body::-webkit-scrollbar{
 }
 .burger_menu{
     cursor: pointer;
+}
+.burger_menu .bi{
+    font-size: 25px;
+    font-weight: 900;
 }
 @keyframes indi{
     0%{
