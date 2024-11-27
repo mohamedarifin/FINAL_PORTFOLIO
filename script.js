@@ -1,3 +1,4 @@
+
 // skills section :-
 var skill_box = document.querySelectorAll('.first_content_back .skill_box');
 var skill_show = document.querySelectorAll('.skills_shows_back .s_s');
