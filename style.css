@@ -17,7 +17,7 @@ body::-webkit-scrollbar{
     width: 100vw;
 }
 .nav_fade{
-    height: 70px;
+    height: 80px;
     width: 100%;
     padding: 10px;
     position: absolute;
@@ -35,15 +35,17 @@ body::-webkit-scrollbar{
 }
 .nav .title{
     font-weight: 900;
+    font-size: 30px;
 }
 .nav_menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 18px;
 }
 .change{
     font-weight: 900;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
     padding: 5px;
 }
@@ -71,8 +73,8 @@ body::-webkit-scrollbar{
     justify-content: center;
 }
 .img_content .img_back{
-        width: 300px;
-        height: 300px;
+        width: 330px;
+        height: 330px;
         border-radius: 50%;
         animation: radi 4s linear infinite;
 }
@@ -112,20 +114,21 @@ body::-webkit-scrollbar{
     background: none;
     border: none;
     outline: none;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .home_content_btns button a{
-    font-size: 18px;
+    font-size: 25px;
     border-radius: 50%;
-    padding: 8px 10px;
+    padding: 12px 14px;
     margin-right: 5px;
 }
 .resume_btn{
     font-weight: 900;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 9px 14px;
     border-radius: 10px;
-    font-size: 18px;    
+    font-size: 20px;
+    letter-spacing: 2px;  
 }
 /* About styles are there :- */
 
@@ -151,8 +154,8 @@ body::-webkit-scrollbar{
     justify-content: center;
 }
 .first_content_back{
-    width: 320px;
-    height: 250px;
+    width: 360px;
+    height: 290px;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -160,8 +163,8 @@ body::-webkit-scrollbar{
     align-items: center;
 }
 .skill_box{
-    width: 120px;
-    height:80px;
+    width: 140px;
+    height:90px;
     border-radius: 10px;
     position: relative;
     text-align: center;
@@ -183,14 +186,15 @@ body::-webkit-scrollbar{
     border: 2px solid black;
 }
 .skills_shows_back{
-    width: 320px;
-    height: 250px;
+    width: 360px;
+    height: 290px;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     position: relative;
+    margin-top: 60px;
 }
 .skills_shows_frontend,.skills_shows_backend,.skills_shows_database,.skills_shows_tool{
     width: 100%;
@@ -206,6 +210,7 @@ body::-webkit-scrollbar{
     text-align: center;
     font-weight: 900;
     padding: 5px 0px;
+    font-size: 20px;
 }
 .skill_bar{
     display: block;
@@ -220,7 +225,7 @@ body::-webkit-scrollbar{
 }
 .bar_outter{
     width: 100%;
-    height: 10px;
+    height: 13px;
     border-radius: 10px;
     margin: 9px 0px;
 }
@@ -355,6 +360,10 @@ body::-webkit-scrollbar{
     border: none;
     outline: none;
 }
+.contact label{
+    font-size: 20px;
+    margin-top: 10px;
+}
 .home{
     position: absolute;
     left: 0;top: 0;
@@ -377,7 +386,7 @@ body::-webkit-scrollbar{
 }
 .set{
     position: absolute;
-    top: 70px;
+    top: 80px;
     left: 45%;
 }
 .change_btn_back{
@@ -571,6 +580,127 @@ body::-webkit-scrollbar{
 
     }
 }
-
-
-
+@media all and (max-width:576px){
+    .home_content_btns button{
+        margin-bottom: 20px;
+    }
+    .home_content_btns button a{
+        font-size: 20px;
+        border-radius: 50%;
+        padding: 12px 14px;
+        margin-right: 5px;
+    }
+    .resume_btn{
+        font-weight: 900;
+        text-decoration: none;
+        padding: 7px 12px;
+        border-radius: 10px;
+        font-size: 17px;
+        letter-spacing: 2px;  
+    }
+ .skillS_first_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.skillS_second_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first_content_back{
+    width: 320px;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.skill_box{
+    width: 120px;
+    height:80px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    line-height:90px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.skill_btns{
+    width: 45px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 45px;
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    border: 2px solid black;
+}
+.skills_shows_back{
+    width: 320px;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.skills_shows_frontend,.skills_shows_backend,.skills_shows_database,.skills_shows_tool{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    padding: 0px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    transform: scale(0);
+}
+.skills_shows_frontend_title,.skills_shows_backend_title,.skills_shows_database_title,.skills_shows_tool_title{
+    text-align: center;
+    font-weight: 900;
+    padding: 5px 0px;
+}
+.skill_bar{
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+.skill_bar .skill_text{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 700;
+}
+.bar_outter{
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    margin: 9px 0px;
+}
+.bar_outter .bar_inner{
+    height: 100%;
+    border-radius: 10px;
+    animation: twink 1s linear infinite;
+}
+.css,.mongodb{
+    width: 95%;
+}
+.html,.bs,.reactjs{
+    width: 85%;
+}
+.js,.express{
+    width: 90%;
+}
+.nodejs,.sql,.redux{
+    width: 70%;
+}
+.git,.handlebar{
+    width: 80%;
+}
+}
