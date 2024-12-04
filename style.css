@@ -35,7 +35,7 @@ body::-webkit-scrollbar{
 }
 .nav .title{
     font-weight: 900;
-    font-size: 30px;
+    font-size: 25px;
 }
 .nav_menu{
     display: flex;
@@ -580,7 +580,7 @@ body::-webkit-scrollbar{
 
     }
 }
-@media all and (max-width:576px){
+@media all and (max-width:768px){
     .home_content_btns button{
         margin-bottom: 20px;
     }
@@ -596,111 +596,30 @@ body::-webkit-scrollbar{
         padding: 7px 12px;
         border-radius: 10px;
         font-size: 17px;
-        letter-spacing: 2px;  
     }
- .skillS_first_content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 50px;
-}
-.skillS_second_content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .first_content_back{
     width: 320px;
     height: 250px;
-    border-radius: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
 }
 .skill_box{
     width: 120px;
     height:80px;
-    border-radius: 10px;
-    position: relative;
-    text-align: center;
-    line-height:90px;
-    font-weight: 900;
-    cursor: pointer;
 }
 .skill_btns{
     width: 45px;
     height: 45px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    text-align: center;
-    line-height: 45px;
-    position: absolute;
-    top: -12px;
-    left: -12px;
-    border: 2px solid black;
 }
 .skills_shows_back{
     width: 320px;
     height: 250px;
-    border-radius: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
+    margin-top: 0;
 }
-.skills_shows_frontend,.skills_shows_backend,.skills_shows_database,.skills_shows_tool{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    position: absolute;
-    padding: 0px 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    display: block;
-    transform: scale(0);
-}
-.skills_shows_frontend_title,.skills_shows_backend_title,.skills_shows_database_title,.skills_shows_tool_title{
-    text-align: center;
-    font-weight: 900;
-    padding: 5px 0px;
-}
-.skill_bar{
-    display: block;
-    display: flex;
-    flex-direction: column;
-}
+
 .skill_bar .skill_text{
-    display: flex;
-    justify-content: space-between;
     font-size: 15px;
-    font-weight: 700;
 }
-.bar_outter{
-    width: 100%;
-    height: 10px;
-    border-radius: 10px;
-    margin: 9px 0px;
-}
-.bar_outter .bar_inner{
-    height: 100%;
-    border-radius: 10px;
-    animation: twink 1s linear infinite;
-}
-.css,.mongodb{
-    width: 95%;
-}
-.html,.bs,.reactjs{
-    width: 85%;
-}
-.js,.express{
-    width: 90%;
-}
-.nodejs,.sql,.redux{
-    width: 70%;
-}
-.git,.handlebar{
-    width: 80%;
+.contact label{
+    font-size: 15px;
+    margin-top: 10px;
 }
 }
